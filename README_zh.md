@@ -19,6 +19,7 @@
 
 <p align="center">
   <a href="#概览">概览</a> ·
+  <a href="#案例">案例</a> ·
   <a href="#logo-类型覆盖">类型覆盖</a> ·
   <a href="#工作流">工作流</a> ·
   <a href="#描摹模式">描摹模式</a> ·
@@ -43,6 +44,17 @@ Logo 矢量精细描摹形成完整的 **检查 → 分类 → 测量 → 重建
 | 适配不同 Logo 家族 | 对几何、文字、有机、徽章、插画和特效型标志采用不同策略 | 方法服务于原图，而不是抹平原有性格 |
 | 阻断局部缺陷 | 放大检查连接、端帽、裁切、绕向、切线和视觉对齐 | 不出现鼓包节点、悬空尖角、发丝缝或意外断口 |
 | 形成可靠 SVG | 校验 XML、`viewBox`、路径、ID、引用、文字和嵌入位图策略 | 得到可移植、可审计的下游矢量文件 |
+
+<a id="案例"></a>
+## 案例：WLCR-SEA Predictor
+
+| 原始参考图 | 最终矢量母版 |
+| --- | --- |
+| <img src="examples/wlcr-sea-predictor/input/logo-reference.png" alt="WLCR-SEA Predictor 原始位图 Logo" width="360"> | <img src="examples/wlcr-sea-predictor/preview/vector-master-preview.png" alt="WLCR-SEA Predictor 最终矢量描摹" width="360"> |
+
+仓库内的完整案例展示了组合型图标与字标的重建，并根据红圈反馈精修通信塔交点和虚线预测箭头。案例包含原始 PNG、审查标注、最终纯路径 SVG 变体、预览图和品牌说明。
+
+**[查看 WLCR-SEA Predictor 完整案例 →](examples/wlcr-sea-predictor/README.md#中文说明)**
 
 <a id="logo-类型覆盖"></a>
 ## Logo 类型覆盖
@@ -205,6 +217,7 @@ python3 scripts/validate_svg.py /absolute/path/to/output --allow-image
 | [`references/tracing-workflow.md`](references/tracing-workflow.md) | 类型自适应描摹、几何工艺、颜色校准和质量审查 |
 | [`scripts/validate_svg.py`](scripts/validate_svg.py) | SVG 结构与纯路径交付的确定性校验 |
 | [`agents/openai.yaml`](agents/openai.yaml) | Skill 显示名称、描述、默认提示词和调用策略 |
+| [`examples/wlcr-sea-predictor/`](examples/wlcr-sea-predictor/) | 包含原图、红圈审查、修复后 SVG 变体和预览的完整案例 |
 | [`README.md`](README.md) | 英文说明 |
 
 ## 负责任使用
@@ -214,4 +227,3 @@ python3 scripts/validate_svg.py /absolute/path/to/output --allow-image
 - 不得声称能从低分辨率或不完整原图恢复像素级细节；
 - 不得把自动校验当作商标许可、视觉准确、字体授权或渲染器兼容性的证明；
 - 官方品牌指南与位图参考冲突时，应采用用户指定的权威来源并记录决定。
-

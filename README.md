@@ -19,6 +19,7 @@
 
 <p align="center">
   <a href="#overview">Overview</a> ·
+  <a href="#case-study">Case Study</a> ·
   <a href="#logo-coverage">Coverage</a> ·
   <a href="#workflow">Workflow</a> ·
   <a href="#fidelity-modes">Fidelity</a> ·
@@ -43,6 +44,17 @@ Logo Vector Tracing closes the full **inspect → classify → measure → recon
 | Respect different logo families | Route geometric, typographic, organic, emblematic, illustrative, and effect-based marks through different construction strategies | A workflow that fits the artwork rather than flattening its character |
 | Prevent local defects | Review joins, caps, clipping, winding, tangency, and optical alignment at enlarged scale | No bulbous intersections, floating spikes, hairline seams, or accidental gaps |
 | Deliver reliable SVG | Validate XML, `viewBox`, paths, IDs, references, text, and embedded raster policy | Portable, auditable vector files for downstream use |
+
+<a id="case-study"></a>
+## Case study: WLCR-SEA Predictor
+
+| Original reference | Final vector master |
+| --- | --- |
+| <img src="examples/wlcr-sea-predictor/input/logo-reference.png" alt="Original WLCR-SEA Predictor raster logo" width="360"> | <img src="examples/wlcr-sea-predictor/preview/vector-master-preview.png" alt="Final WLCR-SEA Predictor vector reconstruction" width="360"> |
+
+The included case shows a combined icon-and-wordmark reconstruction, followed by a marked-feedback repair pass for radio-tower intersections and the dashed prediction arrow. It includes the original PNG, review markup, final path-only SVG variants, previews, and brand guide.
+
+**[Open the complete WLCR-SEA Predictor case study →](examples/wlcr-sea-predictor/README.md)**
 
 <a id="logo-coverage"></a>
 ## Logo coverage
@@ -206,6 +218,7 @@ The validator checks XML parsing, `viewBox`, vector paths, duplicate IDs, extern
 | [`references/tracing-workflow.md`](references/tracing-workflow.md) | Type-adaptive tracing methods, geometry craft, color calibration, and QA |
 | [`scripts/validate_svg.py`](scripts/validate_svg.py) | Deterministic SVG structure and path-only validation |
 | [`agents/openai.yaml`](agents/openai.yaml) | Skill display name, description, default prompt, and invocation policy |
+| [`examples/wlcr-sea-predictor/`](examples/wlcr-sea-predictor/) | End-to-end case with source reference, marked review, repaired SVG variants, and previews |
 | [`README_zh.md`](README_zh.md) | Chinese documentation |
 
 ## Responsible use
@@ -215,4 +228,3 @@ The validator checks XML parsing, `viewBox`, vector paths, duplicate IDs, extern
 - Do not claim pixel-level recovery from a low-resolution or incomplete source.
 - Do not treat automated validation as proof of trademark clearance, visual accuracy, font licensing, or renderer compatibility.
 - When an official brand guide conflicts with a raster reference, follow the user's chosen authority and document the decision.
-
