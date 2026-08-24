@@ -1,0 +1,9 @@
+interface:
+  display_name: "logo_Vector_Tracing"
+  short_description: "Trace or repair any logo as polished vector artwork"
+  brand_color: "#0789F4"
+  default_prompt: "Use $logo-vector-tracing to faithfully reconstruct or repair this logo reference as polished, editable SVG artwork."
+
+policy:
+  allow_implicit_invocation: true
+
