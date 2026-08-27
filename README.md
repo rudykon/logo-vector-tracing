@@ -2,6 +2,10 @@
   <strong>English</strong> · <a href="README_zh.md">中文</a>
 </p>
 
+<p align="center">
+  <img src="logo-vector-tracing.png" width="900" alt="Logo Vector Tracing project logo">
+</p>
+
 <h1 align="center">Logo Vector Tracing</h1>
 
 <p align="center">

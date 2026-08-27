@@ -2,6 +2,10 @@
   <a href="README.md">English</a> · <strong>中文</strong>
 </p>
 
+<p align="center">
+  <img src="logo-vector-tracing.png" width="900" alt="Logo Vector Tracing 项目主 Logo">
+</p>
+
 <h1 align="center">Logo 矢量精细描摹</h1>
 
 <p align="center">
