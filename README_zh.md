@@ -118,6 +118,12 @@ Logo 矢量精细描摹形成完整的 **检查 → 分类 → 测量 → 重建
 
 脚本通过不能替代原图并排对照。
 
+## Illustrator MCP 碎路径精修
+
+针对已有 AI/SVG 的色块接缝、碎路径和边缘毛刺，可通过已验证的 Illustrator MCP 连接保留核心轮廓，用平滑 Bézier 路径和连续矢量渐变重建有缺陷的组件，再按组件建立具名图层。完整方法见 [Illustrator MCP 精修指南](references/illustrator-mcp-refinement.md)。
+
+这一路径单独检查放大的边缘、真实镂空与白色贴纸描边的区别、纸箱等相邻面的重复描边，并重新打开保存的 AI 和 SVG 对照导出。路径数量只是辅助指标；局部修边不应变成未经说明的改字形或重新设计。只有任务需要 Illustrator 时才使用此流程，技能本身不安装 MCP。
+
 <a id="描摹模式"></a>
 ## 描摹模式
 
@@ -219,6 +225,7 @@ python3 scripts/validate_svg.py /absolute/path/to/output --allow-image
 | --- | --- |
 | [`SKILL.md`](SKILL.md) | 入口说明、描摹模式、构建原则和完成门禁 |
 | [`references/tracing-workflow.md`](references/tracing-workflow.md) | 类型自适应描摹、几何工艺、颜色校准和质量审查 |
+| [`references/illustrator-mcp-refinement.md`](references/illustrator-mcp-refinement.md) | Illustrator MCP 组件重建、图层组织、边缘修复及 AI/SVG 导出复核 |
 | [`scripts/validate_svg.py`](scripts/validate_svg.py) | SVG 结构与纯路径交付的确定性校验 |
 | [`agents/openai.yaml`](agents/openai.yaml) | Skill 显示名称、描述、默认提示词和调用策略 |
 | [`examples/wlcr-sea-predictor/`](examples/wlcr-sea-predictor/) | 包含原图、红圈审查、修复后 SVG 变体和预览的完整案例 |

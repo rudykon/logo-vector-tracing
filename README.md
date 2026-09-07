@@ -118,6 +118,12 @@ The three blocking gates are:
 
 Passing the script never replaces side-by-side visual comparison.
 
+## Illustrator MCP refinement
+
+For existing AI/SVG artwork with fragmented color regions, seams, or rough edges, use a verified Illustrator MCP connection to preserve the core silhouette, rebuild defective components with controlled Bezier paths and continuous vector gradients, and organize named component layers. See the [Illustrator MCP refinement guide](references/illustrator-mcp-refinement.md).
+
+This route separately checks enlarged edges, true counters versus white sticker borders, doubled strokes on adjacent faces, and reopened AI/SVG exports. Path counts are supporting evidence, not a quality target; an edge repair should not silently change letterforms or become a redesign. Use this route only when Illustrator is relevant; the skill does not install an MCP server.
+
 <a id="fidelity-modes"></a>
 ## Fidelity modes
 
@@ -220,6 +226,7 @@ The validator checks XML parsing, `viewBox`, vector paths, duplicate IDs, extern
 | --- | --- |
 | [`SKILL.md`](SKILL.md) | Entrypoint, fidelity modes, construction principles, and completion gates |
 | [`references/tracing-workflow.md`](references/tracing-workflow.md) | Type-adaptive tracing methods, geometry craft, color calibration, and QA |
+| [`references/illustrator-mcp-refinement.md`](references/illustrator-mcp-refinement.md) | Illustrator MCP component reconstruction, layers, edge repair, and AI/SVG round-trip checks |
 | [`scripts/validate_svg.py`](scripts/validate_svg.py) | Deterministic SVG structure and path-only validation |
 | [`agents/openai.yaml`](agents/openai.yaml) | Skill display name, description, default prompt, and invocation policy |
 | [`examples/wlcr-sea-predictor/`](examples/wlcr-sea-predictor/) | End-to-end case with source reference, marked review, repaired SVG variants, and previews |

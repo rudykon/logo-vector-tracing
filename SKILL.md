@@ -1,6 +1,6 @@
 ---
 name: logo-vector-tracing
-description: Faithfully reconstruct or repair logos of any visual category as polished, editable SVG artwork. Use for raster-to-vector tracing, inaccurate SVG cleanup, geometric marks, wordmarks and lettermarks, emblems, mascots, hand-drawn marks, gradient or negative-space logos, typography outlining, and coordinated logo variants; do not use for unrelated raster retouching or new logo concept generation without a reference.
+description: Faithfully reconstruct or repair logos of any visual category as polished, editable SVG artwork or layered Illustrator masters. Use for fragmented AI/SVG cleanup, Illustrator MCP refinement, raster-to-vector tracing, inaccurate SVG cleanup, geometric marks, wordmarks and lettermarks, emblems, mascots, hand-drawn marks, gradient or negative-space logos, typography outlining, and coordinated logo variants; do not use for unrelated raster retouching or new logo concept generation without a reference.
 ---
 
 # Logo Vector Tracing
@@ -36,6 +36,12 @@ Read [references/tracing-workflow.md](references/tracing-workflow.md) for catego
 - Convert typography to paths when fidelity or portability requires it. Preserve live text only when the user explicitly wants editable text and the font dependency is documented.
 - Do not embed the source raster or substitute generative artwork for a requested trace.
 
+## Refine fragmented Illustrator artwork
+
+When the user requests Illustrator/MCP editing, layered AI output, or cleanup of a fragmented trace, read [references/illustrator-mcp-refinement.md](references/illustrator-mcp-refinement.md). Prefer a verified Illustrator MCP connection for native edits; do not require Illustrator for ordinary SVG-only work.
+
+Preserve the core silhouette and typography, rebuild noisy components with controlled curves and continuous vector gradients, and organize by visual function. Treat enlarged edge review and reopening the saved AI/SVG as separate completion checks. Lower path counts alone do not prove fidelity or clean edges.
+
 ## Derive only the variants requested
 
 Keep shared geometry in one source or generator when multiple lockups are needed. Derive horizontal, vertical, icon-only, monochrome, reversed, dark-background, print, or favicon versions according to the user's actual scope; do not force a fixed package from a previous project.
@@ -51,4 +57,3 @@ python scripts/validate_svg.py /path/to/output
 ```
 
 Use `--allow-text` or `--allow-image` only when those elements are explicitly part of the requested deliverable. Do not report completion until every SVG parses, has a `viewBox`, contains vector geometry, resolves internal references, and meets the fidelity mode agreed for the task.
-
