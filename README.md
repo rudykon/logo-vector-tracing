@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="logo-vector-tracing.png" width="900" alt="Logo Vector Tracing project logo">
+  <img src="logo-vector-tracing.svg" width="900" alt="Logo Vector Tracing project logo">
 </p>
 
 <h1 align="center">Logo Vector Tracing</h1>

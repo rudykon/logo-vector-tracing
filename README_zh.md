@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="logo-vector-tracing.png" width="900" alt="Logo Vector Tracing 项目主 Logo">
+  <img src="logo-vector-tracing.svg" width="900" alt="Logo Vector Tracing 项目主 Logo">
 </p>
 
 <h1 align="center">Logo 矢量精细描摹</h1>
